@@ -18,6 +18,10 @@ public class FormDataCollectUtil {
 	private static FormDataCollectUtil instance;
 
 	private Map<String, Object> map;
+	
+	private FormDataCollectUtil(){
+		
+	}
 
 	public static FormDataCollectUtil getInstance() {
 		if (instance == null) {

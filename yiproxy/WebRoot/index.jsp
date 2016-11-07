@@ -35,9 +35,9 @@
 		<div class="container">
 			<div class="load_more">
 				<div class="l_g">
-					<div class="col-md-3  grid">
+					<div class="col-md-3 col-sm-6 grid">
 						<div class="l_g_r">
-							<a href="" class="port-grid"><img class="img-responsive "
+							<a href="<%=path%>/product/nike" class="port-grid"  target="_blank"><img class="img-responsive "
 								src="<%=path%>/image/nike.jpg" alt=""></a>
 							<!-- <div class="port">
 					<p class="port-in">耐克</p>
@@ -45,21 +45,21 @@
 				</div> -->
 						</div>
 					</div>
-					<div class="col-md-3  grid">
+					<div class="col-md-3  col-sm-6 grid">
 						<div class="l_g_r">
-							<a href="single.html" class="port-grid"><img
+							<a href="<%=path%>/product/adidas" class="port-grid"  target="_blank"><img
 								class="img-responsive " src="<%=path%>/image/adidas.jpg" alt=""></a>
 						</div>
 					</div>
-					<div class="col-md-3  grid">
+					<div class="col-md-3 col-sm-6 grid">
 						<div class="l_g_r">
-							<a href="single.html" class="port-grid"><img
+							<a href="<%=path%>/product/jordan" class="port-grid"  target="_blank"><img
 								class="img-responsive " src="<%=path%>/image/jordan.jpg" alt=""></a>
 						</div>
 					</div>
-					<div class="col-md-3  grid">
+					<div class="col-md-3 col-sm-6 grid">
 						<div class="l_g_r">
-							<a href="single.html" class="port-grid"><img
+							<a href="<%=path%>/product/puma" class="port-grid"  target="_blank"><img
 								class="img-responsive " src="<%=path%>/image/puma.jpg" alt=""></a>
 						</div>
 					</div>
@@ -67,27 +67,27 @@
 				</div>
 				
 				<div class="l_g">
-					<div class="col-md-3  grid">
+					<div class="col-md-3 col-sm-6 grid">
 						<div class="l_g_r">
-							<a href="single.html" class="port-grid"><img
+							<a href="<%=path%>/product/vans" class="port-grid"  target="_blank"><img
 								class="img-responsive " src="<%=path%>/image/vans.jpg" alt=""></a>
 						</div>
 					</div>
-					<div class="col-md-3  grid">
+					<div class="col-md-3 col-sm-6 grid">
 						<div class="l_g_r">
-							<a href="" class="port-grid"><img class="img-responsive "
+							<a href="<%=path%>/product/converse" class="port-grid"  target="_blank"><img class="img-responsive "
 								src="<%=path%>/image/converse.jpg" alt=""></a>
 						</div>
 					</div>
-					<div class="col-md-3  grid">
+					<div class="col-md-3 col-sm-6 grid">
 						<div class="l_g_r">
-							<a href="single.html" class="port-grid"><img
+							<a href="<%=path%>/product/newbalance" class="port-grid"  target="_blank"><img
 								class="img-responsive " src="<%=path%>/image/newbalance.jpg" alt=""></a>
 						</div>
 					</div>
-					<div class="col-md-3  grid">
+					<div class="col-md-3 col-sm-6  grid">
 						<div class="l_g_r">
-							<a href="single.html" class="port-grid"><img
+							<a href="<%=path%>/product/reebok" class="port-grid"  target="_blank"><img
 								class="img-responsive " src="<%=path%>/image/reebok.jpg" alt=""></a>
 						</div>
 					</div>
@@ -96,21 +96,21 @@
 				</div>
 				
 				<div class="l_g">
-					<div class="col-md-3  grid">
+					<div class="col-md-3 col-sm-6 grid">
 						<div class="l_g_r">
-							<a href="single.html" class="port-grid"><img
+							<a href="<%=path%>/product/asics" class="port-grid"  target="_blank"><img
 								class="img-responsive " src="<%=path%>/image/asics.jpg" alt=""></a>
 						</div>
 					</div>
-					<div class="col-md-3  grid">
+					<div class="col-md-3 col-sm-6  grid">
 						<div class="l_g_r">
-							<a href="" class="port-grid"><img class="img-responsive "
+							<a href="<%=path%>/product/ugg" class="port-grid"  target="_blank"><img class="img-responsive "
 								src="<%=path%>/image/ugg.jpg" alt=""></a>
 						</div>
 					</div>
-					<div class="col-md-3  grid">
+					<div class="col-md-3 col-sm-6 grid">
 						<div class="l_g_r">
-							<a href="single.html" class="port-grid"><img
+							<a href="<%=path%>/product/timberland" class="port-grid"  target="_blank"><img
 								class="img-responsive " src="<%=path%>/image/timberland.jpg" alt=""></a>
 						</div>
 					</div>

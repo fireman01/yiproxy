@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.product.mapper.ProductMapper">
+	 <select id="getProductListWithPage" parameterType="object" resultType="map">
+		SELECT t.id, t.name, b.name as shoesName, t.brand, a.name as shoesBrand,
+		 t.color, c.name as shoesColor,t.shoesRange as rangeId,d.name as shoesRange, t.picture, t.remarks  FROM shoes t 
+		left join catalog a on a.id = t.brand and a.type='1'
+		left join catalog b on b.id = t.name and b.type='3'
+		left join catalog c on c.id = t.color and c.type='4'
+		left join catalog d on d.id = t.shoesRange and d.type='2'
+		order by t.updateTime desc
+		LIMIT  #{pageNum},#{numPerPage}	
+	</select>
+	
+	<select id="countProductTotal" parameterType="object"
+		resultType="int">
+		SELECT count(1) FROM shoes where 1=1
+	</select>
+	
+	<select id="getProductListByName" parameterType="object" resultType="map">
+		SELECT t.* FROM  shoes t where t.name = #{id}
+	</select>
+	<insert id="saveProduct" parameterType="object">
+	INSERT INTO shoes(id,brand,shoesRange,name,color,remarks,picture,introduction,updateTime)
+	            values(#{id},#{brand},#{shoesRange},#{name},#{color},#{remarks},#{picture},#{introduction},#{updateTime})
+	</insert>
+	
+	<update id="updateProduct" parameterType="object">
+	UPDATE shoes SET name = #{name},brand = #{brand},color=#{color},remarks=#{remarks},picture=#{picture},
+	introduction=#{introduction},updateTime=#{updateTime},shoesRange=#{shoesRange}
+	WHERE id = #{id}
+	</update> 
+	
+	<select id="getProductById" parameterType="object" resultType="map">
+		SELECT t.* FROM  shoes t where t.id = #{id}
+	</select>
+	
+	<select id="getProductByColor" parameterType="object" resultType="map">
+		SELECT t.* FROM  shoes t where t.color = #{id}
+	</select>
+	
+	<select id="getProductListByBrand" parameterType="object" resultType="map">
+		SELECT t.* FROM  shoes t where t.brand = #{brand}
+		LIMIT  0,30
+	</select>
+	
+	<select id="getSearchResult" parameterType="object" resultType="map">
+		 ${sql}
+	</select>
+	
+	 <delete id="deleteProduct">
+     DELETE FROM shoes WHERE id = #{id}
+    </delete>
+</mapper>
